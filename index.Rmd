@@ -117,7 +117,10 @@ remove.packages("gtexr")
 ### test install of `gtexr` from GitHub with:
 
 ```{r test-github}
-devtools::install_github("rmgpanw/gtexr", dependencies = TRUE, build_vignettes = TRUE)
+devtools::install_github(
+  "rmgpanw/gtexr", branch = "ropensci-software-review",
+  dependencies = TRUE, build_vignettes = TRUE
+)
 ```
 
 #### **comments:**
